@@ -1,4 +1,4 @@
 [workspace]
 resolver = "2"
-members = ["hal", "atsamd-hal-macros"]
+members = ["hal", "atsamd-hal-macros", "temp/atsamc21_pac"]
 exclude = ["pac", "boards"]

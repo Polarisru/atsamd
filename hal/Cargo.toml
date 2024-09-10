@@ -11,7 +11,7 @@ authors = [
   "Bradley Harden <bradleyharden@gmail.com>",
 ]
 categories = ["embedded", "hardware-support", "no-std"]
-description = "HAL and Peripheral access API for ATSAMD11, ATSAMD21, ATSAMD51, ATSAME51, ATSAME53 and ATSAME54 microcontrollers"
+description = "HAL and Peripheral access API for ATSAMD11, ATSAMD21, ATSAMC21, ATSAMD51, ATSAME51, ATSAME53 and ATSAME54 microcontrollers"
 documentation = "https://docs.rs/crate/atsamd-hal/"
 edition = "2021"
 keywords = ["no-std", "arm", "cortex-m", "embedded-hal"]
@@ -80,6 +80,11 @@ atsamd21e = {version = "0.13.0", path = "../pac/atsamd21e", optional = true}
 atsamd21g = {version = "0.13.0", path = "../pac/atsamd21g", optional = true}
 atsamd21j = {version = "0.13.0", path = "../pac/atsamd21j", optional = true}
 
+atsamc21e = {version = "0.13.0", path = "../pac/atsamc21e", optional = true}
+atsamc21g = {version = "0.13.0", path = "../pac/atsamc21g", optional = true}
+atsamc21j = {version = "0.13.0", path = "../pac/atsamc21j", optional = true}
+atsamc21n = {version = "0.13.0", path = "../pac/atsamc21n", optional = true}
+
 atsamd51g = {version = "0.13.0", path = "../pac/atsamd51g", optional = true}
 atsamd51j = {version = "0.13.0", path = "../pac/atsamd51j", optional = true}
 atsamd51n = {version = "0.13.0", path = "../pac/atsamd51n", optional = true}
@@ -121,6 +126,11 @@ samd21j = ["device", "dep:atsamd21j"]
 samd21el = ["device", "dep:atsamd21e"]
 samd21gl = ["device", "dep:atsamd21g"]
 
+samc21e = ["device", "dep:atsamc21e"]
+samc21g = ["device", "dep:atsamc21g"]
+samc21j = ["device", "dep:atsamc21j"]
+samc21n = ["device", "dep:atsamc21n"]
+
 samd51g = ["device", "dep:atsamd51g"]
 samd51j = ["device", "dep:atsamd51j"]
 samd51n = ["device", "dep:atsamd51n"]
@@ -152,6 +162,11 @@ samd21j-rt = ["samd21j", "atsamd21j/rt"]
 
 samd21el-rt = ["samd21el", "atsamd21e/rt"]
 samd21gl-rt = ["samd21gl", "atsamd21g/rt"]
+
+samc21e-rt = ["samc21e", "atsamc21e/rt"]
+samc21g-rt = ["samc21g", "atsamc21g/rt"]
+samc21j-rt = ["samc21j", "atsamc21j/rt"]
+samc21n-rt = ["samc21n", "atsamc21n/rt"]
 
 samd51g-rt = ["samd51g", "atsamd51g/rt"]
 samd51j-rt = ["samd51j", "atsamd51j/rt"]

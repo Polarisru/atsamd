@@ -75,6 +75,42 @@ families:
       - dac
       - ptc
 
+  c21:
+    pins:
+      samc21e: ["pins-32a", "pa28"]
+      samc21g: ["pins-48a", "pa28"]
+      samc21j: ["pins-64", "pa28"]
+      samc21n: ["pins-100", "pa28"]
+    peripherals:
+      - serial-numbers
+      - dsu
+      - clock
+      - gclk
+      - pm
+      - sysctrl
+      - wdt
+      - rtc
+      - dmac
+      - eic
+      - nvmctrl
+      - port
+      - evsys
+      - sercom: { count: 4, only: ["samc21e"] }
+      - sercom: { count: 6, only: ["samc21g", "samc21j"] }
+      - sercom: { count: 8, only: ["samc21n"] }
+      - tc: { count: 5, only: ["samc21e", "samc21g", "samc21j" }
+      - tc: { count: 8, only: ["samc21n"] }
+      - tcc: { count: 3 }
+      - can: { count: 1, only: ["samc21e"] }
+      - can: { count: 2, only: ["samc21g", "samc21j", "samc21n"] }
+      - adc
+      - sdadc
+      - ac
+      - dac
+      - ptc
+      - tsens
+      - freqm
+
   d5x:
     pins:
       samd51g: ["pins-48a"]

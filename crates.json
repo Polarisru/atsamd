@@ -206,6 +206,42 @@
       ],
       "target": "thumbv6m-none-eabi"
     },
+    "samc21e": {
+      "features": [
+        "samc21e",
+        "can",
+        "dma",
+        "defmt"
+      ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21g": {
+      "features": [
+        "samc21g",
+        "can",
+        "dma",
+        "defmt"
+      ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21j": {
+      "features": [
+        "samc21j",
+        "can",
+        "dma",
+        "defmt"
+      ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21n": {
+      "features": [
+        "samc21n",
+        "can",
+        "dma",
+        "defmt"
+      ],
+      "target": "thumbv6m-none-eabi"
+    },
     "samd51g": {
       "features": [
         "samd51g",
@@ -274,6 +310,22 @@
     },
     "samd21j":  {
       "features": [ "samd21j", "usb", "dma", "rtic", "defmt" ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21e":  {
+      "features": [ "samc21e", "can", "dma", "rtic", "defmt" ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21g":  {
+      "features": [ "samc21g", "can", "dma", "rtic", "defmt" ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21j":  {
+      "features": [ "samc21j", "can", "dma", "rtic", "defmt" ],
+      "target": "thumbv6m-none-eabi"
+    },
+    "samc21n":  {
+      "features": [ "samc21n", "can", "dma", "rtic", "defmt" ],
       "target": "thumbv6m-none-eabi"
     },
     "samd51g":  {
